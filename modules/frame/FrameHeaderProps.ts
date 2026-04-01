@@ -4,8 +4,13 @@ export interface MacroService {
   description?: string;
   link: string;
 }
-
+export interface FrameHeaderItem {
+  key: string;
+  text: string;
+  icon?: string;
+}
 export interface FrameHeaderInjection {
   title?: string;
-  services: MacroService[];
+  services?: MacroService[];
+  items?: FrameHeaderItem[];
 }

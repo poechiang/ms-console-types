@@ -4,6 +4,7 @@ export interface MenuItem {
   path: string;
   icon?: string;
   children?: MenuItem[];
+  onClick?: () => void;
 }
 
 export interface FrameAsideInjection {
