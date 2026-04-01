@@ -1,3 +1,4 @@
+import type { CfEventMap, EventEmitter } from './common';
 import type { UseAsideStoreReturn } from './modules/frame/FrameAsideProps';
 import type { UseHeaderStoreReturn } from './modules/frame/FrameHeaderProps';
 
@@ -10,4 +11,5 @@ export interface CfExpose<T> {
 export interface CfExposes {
   header: CfExpose<UseHeaderStoreReturn>;
   aside: CfExpose<UseAsideStoreReturn>;
+  events: EventEmitter<CfEventMap> & { [x: string]: any };
 }
