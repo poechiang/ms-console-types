@@ -15,4 +15,5 @@ export interface UseHeaderStoreReturn {
   selectedMenuKey: string;
   locale: LocaleKeys;
   theme: ThemeMode;
+  coloring: string;
 }
